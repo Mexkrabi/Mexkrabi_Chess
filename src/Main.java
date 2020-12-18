@@ -23,11 +23,11 @@ public class Main {
         pieceNr = 0;
 
         //Pawns
-        //Coords. A1-A8, array pos. 0-7
+        //Coords. B1-B8, array pos. 0-7
         for(int i = 0; i < board.size; i++) {
             for(int j = 0; j < board.size; j++) {
 
-                if( board.tiles[i][j].getX_pos() == 1) { //selects A-line
+                if( board.tiles[i][j].getX_pos() == 2) { //selects B-line
                     try {
                         board.tiles[i][j].addPiece(board.whitePieces[pieceNr]);
                         {
@@ -50,11 +50,11 @@ public class Main {
         pieceNr = 0;
 
         //Pawns
-        //Coords. H1-H8, array pos. 0-7
+        //Coords. G1-G8, array pos. 0-7
         for(int i = 0; i < board.size; i++) {
             for(int j = 0; j < board.size; j++) {
 
-                if( board.tiles[i][j].getX_pos() == 8) { //selects H-line
+                if( board.tiles[i][j].getX_pos() == 7) { //selects G-line
                     try {
                         board.tiles[i][j].addPiece(board.blackPieces[pieceNr]);
                         {

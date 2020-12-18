@@ -22,6 +22,7 @@ public class Board {
         } catch (NotStartOfTheGameException e) {
             e.printStackTrace();
         }
+        //TODO: startOfTheGame = false;
     }
 
     //Methods
