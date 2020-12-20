@@ -1,6 +1,7 @@
 package Pieces;
 
 public class Piece {
+    //TODO: extend Piece class to each individual piece (20.12.2020)
 
     //Variables
     private int value;
@@ -16,7 +17,7 @@ public class Piece {
     }
 
     public void move(){
-
+        //TODO: finish this method Kappa (20.12.2020)
 
     }
 
@@ -41,23 +42,14 @@ public class Piece {
      */
     public void setValue(Type type) {
         switch (type) {
-            case PAWN:
-                value = 1;
-                break;
-            case KNIGHT:
-            case BISHOP:
-                value = 3;
-                break;
-            case ROOK:
-                value = 5;
-                break;
-            case QUEEN:
-                value = 9;
-                break;
-            case KING:
-                value = 999999;
+            case PAWN -> value = 1;
+            case KNIGHT, BISHOP -> value = 3;
+            case ROOK -> value = 5;
+            case QUEEN -> value = 9;
+            case KING -> value = 999999;
         }
     }
+
 
     public Color getColor() {
         return color;

@@ -61,6 +61,7 @@ public class Board {
      */
     private Piece[] generateWhitePieces(boolean isStartOfTheGame) throws NotStartOfTheGameException {
 
+        System.out.println("-----------------------------------------------");
         if (isStartOfTheGame) {
 
             System.out.println("Creating white pieces:");
@@ -126,6 +127,7 @@ public class Board {
      */
     private Piece[] generateBlackPieces(boolean isStartOfTheGame) throws NotStartOfTheGameException {
 
+        System.out.println("-----------------------------------------------");
         if (isStartOfTheGame) {
 
             System.out.println("Creating black pieces:");

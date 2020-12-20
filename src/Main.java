@@ -12,8 +12,10 @@ public class Main {
         Board board = new Board(gameLogic);
 
         //TODO: put all outputs in {}-brackets (16.12.2020)
+        //TODO: Add players (20.12.2020)
     //---------------------------------------------------------------------------
 
+        System.out.println("-----------------------------------------------");
         //Adding pieces to the corresponding starting positions
         int pieceNr; //indicates which piece should be selected
 
@@ -162,6 +164,7 @@ public class Main {
             e.printStackTrace();
         }
 
+        System.out.println("-----------------------------------------------");
 //black
         pieceNr = 0;
 
