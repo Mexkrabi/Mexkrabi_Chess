@@ -55,7 +55,17 @@ public class Tile {
      * Prints X and Y coordinates.
      */
     public void printCoordinates() {
-        System.out.print(getX_pos()); //TODO: Print 'A'-'H' instead of '1'-'8' (16.12.2020)
+
+        switch (getX_pos()) {
+            case 1 -> System.out.print('A');
+            case 2 -> System.out.print('B');
+            case 3 -> System.out.print('C');
+            case 4 -> System.out.print('D');
+            case 5 -> System.out.print('E');
+            case 6 -> System.out.print('F');
+            case 7 -> System.out.print('G');
+            case 8 -> System.out.print('H');
+        }
         System.out.print(getY_pos());
     }
 

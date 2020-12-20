@@ -44,7 +44,8 @@ public class Board {
                 System.out.print("Tiles XY: ");
                 for (int j = 0; j < 8; j++) {
                     tiles[i][j] = new Tile(i + 1, j + 1);
-                    System.out.print(tiles[i][j].getX_pos() + "" + tiles[i][j].getY_pos() + " - ");
+                    tiles[i][j].printCoordinates();
+                    System.out.print(" - ");
                 }
                 System.out.println();
             }
