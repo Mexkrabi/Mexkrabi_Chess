@@ -1,8 +1,11 @@
 package Pieces;
 
+import Board.*;
+
 public class Piece {
     //TODO: extend Piece class to each individual piece (20.12.2020)
 
+    //TODO: Add subclasses for each piece (Queen extends Piece etc) (26.10.2022)
     //Variables
     private int value;
     private Color color;
@@ -16,8 +19,11 @@ public class Piece {
         setType(type);
     }
 
-    public void move(){
-        //TODO: finish this method Kappa (20.12.2020)
+    public void move(int deltaX, int deltaY){
+
+
+        //TODO: finish this method (20.12.2020)
+        //TODO: add getPiece to "Tile" (23.05.2022)
 
     }
 
@@ -38,7 +44,7 @@ public class Piece {
 
     /** Defining piece values for each specific type, according to chess rules.
      *
-     * @param type
+     * @param type - Piece to be selected
      */
     public void setValue(Type type) {
         switch (type) {
@@ -46,7 +52,7 @@ public class Piece {
             case KNIGHT, BISHOP -> value = 3;
             case ROOK -> value = 5;
             case QUEEN -> value = 9;
-            case KING -> value = 999999;
+            case KING -> value = 696969;
         }
     }
 

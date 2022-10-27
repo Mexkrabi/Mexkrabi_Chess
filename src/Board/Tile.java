@@ -39,7 +39,7 @@ public class Tile {
      *  Requires a try-catch block.
      *
      * @param piece - Piece that is supposed to go to this tile
-     * @throws FullTileException - self explanatory (Tile already has a piece)
+     * @throws FullTileException - self-explanatory (Tile already has a piece)
      */
     public void addPiece(Piece piece) throws FullTileException {
         if(isEmpty()) {
@@ -84,6 +84,14 @@ public class Tile {
 
     public void setY_pos(int y_pos) {
         this.y_pos = y_pos;
+    }
+
+    public Piece getPiece() {
+        return piece;
+    }
+
+    public void setPiece(Piece piece) {
+        this.piece = piece;
     }
 
 }
